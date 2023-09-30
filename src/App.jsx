@@ -1,11 +1,10 @@
 import './App.css'
+import Home from './pages/Home'
 
 function App() {
 
   return (
-    <div className='flex'>
-        <h1>FPGA Hackathon</h1>
-    </div>
+    <Home />
   )
 }
 
