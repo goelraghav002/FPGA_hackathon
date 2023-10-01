@@ -1,0 +1,99 @@
+.logoS {
+    width: 40%;
+    height: 400px;
+    margin-top: 0;
+    padding: 0;
+    position: relative;
+    top:2.5rem;
+    left:2rem;
+  }
+  .Logo {
+    width: 60%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+
+    
+  }
+  
+  
+  .LogoSectionAbout {
+    text-align: left;
+    width: 80vw;
+    display: inline-block;
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+    line-height:2rem;
+    
+
+  }
+
+  .LogoSectionAbout h1 {
+    font-weight: 700;
+    text-align: left;
+    font-size:3rem;
+    opacity:0.8;
+  }
+  
+  .Logo {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 2s infinite alternate;
+  }
+
+  @-webkit-keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  @keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @media (max-width: 570px) {
+    .logoS {
+      margin-top: 10rem;
+      margin-bottom: -10rem;
+    }
+    .Logo {
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 570px) {
+    .logoS {
+      margin-top: 10rem;
+      margin-bottom: -10rem;
+      /* background-color: black; */
+    }
+    .Logo {
+      margin: 0 auto;
+    }
+  }
+
+
+
+  .about-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left:10rem;
+    margin-top:7rem;
+  }
+  
+  .LogoSectionAbout,
+  .Logo {
+    flex: 1; 
+    padding: 1rem; 
+  }
+  
+
+  
