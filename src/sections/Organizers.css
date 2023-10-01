@@ -19,7 +19,7 @@
 
 .organizersSection {
     text-align: center;
-    width:95%;
+    width:85%;
     padding: 4vh 6vh;
     margin: 4vh auto;
     /* border-radius: 14px; */
@@ -39,7 +39,7 @@
 }
 
 .organizer-img{
-    height: 100px;
+    height: 120px;
     max-width: 150px;
     display: flex;
     align-items: center;
