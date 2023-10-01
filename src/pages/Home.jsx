@@ -6,6 +6,7 @@ import Timeline from '../sections/Timeline'
 import FrequentlyAsked from '../sections/FrequentlyAsked'
 import Sponsers from '../sections/Sponsers'
 import Footer from '../components/Footer'
+import Prizes from '../sections/Prizes'
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Banner />
             <About />
             <Timeline />
+            <Prizes />
             <FrequentlyAsked />
             <Sponsers />
             <Footer />
