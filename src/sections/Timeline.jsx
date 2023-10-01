@@ -21,9 +21,10 @@ const Timeline = () => {
               contentArrowStyle={{ borderRight: '7px solid  #f5f5f5 ' }}
               iconStyle={{ background: '#3498db', color: '#fff' }}        
               icon={<AiFillCalendar />}
+              // style={{width:"auto", maxwidth:"100%"}}
             >
-              <h3 className="vertical-timeline-element-title">{item.date}</h3>              
-              <p style={{color:" #777777"}}>
+              <h2 className="vertical-timeline-element-title"><b>DATE:</b> {item.date}</h2>              
+              <p style={{color:" #777777"}} className='para'>
                 {item.event}
               </p>
             </VerticalTimelineElement>
