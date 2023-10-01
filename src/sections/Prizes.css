@@ -16,10 +16,16 @@
 
 .prizesection {
     text-align: center;
+    width:95%;
     padding: 4vh 6vh;
-    margin: 4vh 0vh 4vh 0vh;
+    margin: 4vh auto;
     border-radius: 14px;
     background-color: #f3effe;
+}
+
+.prizesection h1{
+    font-weight: bolder;
+    font-size: 2.5rem;
 }
 
 .EachPrizes{

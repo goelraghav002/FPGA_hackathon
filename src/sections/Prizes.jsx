@@ -56,7 +56,7 @@ const PrizeGroup = (props, index) => {
 const Prizes = () => {
   return (
     <div className="prizesection" id="prizes">
-      {/* <PrizeHeading type="Prize section" /> */}
+      <h1>Prizes</h1>
       {Prizeinfo.map(PrizeGroup)}
     </div>
   )
