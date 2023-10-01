@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+.landing{
+    margin-top: 45px;
+    background-image: linear-gradient(rgba(0,0,0,.527),rgba(0,0,0,.5)),url("../assets/bg2.gif");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 7rem;
+    overflow-x: hidden; 
+    .content{        
+        color: white;
+        margin-left: 5%; 
+        padding-top: 7%;      
+        width: 100%;   
+        
+        height: fit-content;           
+        h1{
+            font-family: 'Poppins', sans-serif;
+            font-size: 5rem;
+            font-weight: 600;
+            margin-top: 0;
+            padding: 0;
+            margin-bottom: 0;
+        }
+        .typewriter{
+            font-size: 3rem;
+            font-weight: 300;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .banner-link{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: fit-content;
+            p{
+                font-size: 1.2rem;
+                font-weight: 300;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .join_disco {
+                width: fit-content;
+                svg{
+                    font-size: 2rem;
+                }
+                padding: 1rem 2rem;
+                border-radius: 50px;
+                background: linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
+                display: flex;
+                justify-content: center;
+                font-size: 1.1rem;
+                font-weight: 600;
+                align-items: center;
+                &:hover{
+                    cursor: pointer;
+                    background: linear-gradient(90deg, #9796f0 0%, #fbc7d4 100%);
+                    box-shadow: 0px 0px 10px 0px #9796f0;
+                    
+                }
+            }       
+            
+            .devfolio{
+                align-items: center;
+                background-color: #3770ff;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                height: 44px;
+                outline: none;
+                width: fit-content;
+                padding: 0 32px;
+                
+            }
+        }
+
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            margin: 0 auto;
+            gap: 2rem;
+            margin-top: 3rem;
+            p{
+                font-size: 1.5rem;
+                font-weight: 400;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            ul{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: center;
+                gap: 3rem;
+                li{
+                    list-style: none;
+                    a{
+                        color: white;
+                        svg{
+                            font-size: 3rem;
+                            font-weight: 400;
+                        }
+                                                
+                        &:hover{
+                            color: #9796f0;
+                        }
+                    }
+                }
+    
+            }
+        }
+
+
+    }
+
+    
+    
+}
+
+
+
+
+
+
+
+
