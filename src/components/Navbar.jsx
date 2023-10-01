@@ -1,10 +1,11 @@
-import { useEffect,useRef,useState} from 'react';
+import { useEffect, useRef, useState } from 'react';
 // import { Link} from 'react-router-dom';
 import styled from 'styled-components';
 import logoClose from "../assets/ham-c.svg";
 import hamLogo from '../assets/ham.svg';
 import logo from '../assets/logo.png';
 import './Navbar.scss';
+import { Link } from 'react-router-dom';
 
 const NAVIGATION_OFFSET = 66;
 
@@ -83,53 +84,53 @@ const Navbar = () => {
 
   return (
 
-      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
-        <Wrapper toggle={toggle}>
-          <div className="nav-content" >
-            <ul>
-              <li>
-                <span className="links">
-                  <img src={logo} width="80px" alt="logo" />
-                </span>
-              </li>
-              <li>
-                <a href="#home">
-                  <span className="links">Home </span>
-                </a>
-              </li>
-              <li>
-                <a href="#faq">
-                  <span className="links">About </span>
-                </a>
-              </li>
-              <li>
-                <a href="#prizes">
-                  <span className="links">Prizes </span>
-                </a>
-              </li>
-              <li>
-                <a href="#sponsors">
-                  <span className="links">Sponsors </span>
-                </a>
-              </li>
+    <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
+      <Wrapper toggle={toggle}>
+        <div className="nav-content" >
+          <ul>
+            <li>
+              <span className="links">
+                <img src={logo} width="80px" alt="logo" />
+              </span>
+            </li>
+            <li>
+              <Link to="#home">
+                <span className="links">Home </span>
+              </Link>
+            </li>
+            <li>
+              <Link to="#faq">
+                <span className="links">About </span>
+              </Link>
+            </li>
+            <li>
+              <Link to="#prizes">
+                <span className="links">Prizes </span>
+              </Link>
+            </li>
+            <li>
+              <Link to="#sponsors">
+                <span className="links">Sponsors </span>
+              </Link>
+            </li>
 
-              <img
-                className="s-close"
-                onClick={() => setToggle(true)}
-                src={logoClose}
-              />
-            </ul>
-          </div>
-        
-        </Wrapper>
+            <img
+              className="s-close"
+              onClick={() => setToggle(true)}
+              src={logoClose}
+            />
+          </ul>
+        </div>
 
-        <img
-          className="s-open"
-          onClick={() => setToggle(false)}
-          src={hamLogo}
-        />
-      </nav>
-      
+      </Wrapper>
+
+      <img
+        className="s-open"
+        onClick={() => setToggle(false)}
+        src={hamLogo}
+      />
+    </nav>
+
 
   );
 };
