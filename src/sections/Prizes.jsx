@@ -45,7 +45,7 @@ const EachPrize = (props) => {
 
 const PrizeGroup = (props, index) => {
   return (
-    <div key={index} className='grid-container'>
+    <div key={index} className='prizes-grid-container'>
       {props.map((s, i) => (
         <EachPrize key={i} icon={s.icon} type={s.type} content={s.content} />
       ))}
