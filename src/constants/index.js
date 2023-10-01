@@ -27,16 +27,16 @@ export const timeline = [
         event: "Orientiation",
     },
     {
+        date: "4th - 7th October 2023",
+        event: "Offline Training",
+    },
+    {
         date: "10th October 2023",
         event: "Team Registration"
     },
     {
-        date: "12th October 2023",
-        event: "Idea Shortlisting",
-    },
-    {
-        date: "26th October 2023",
-        event: "12 Hours Offline Hackathon"
+        date: "12th - 25th October 2023",
+        event: "Idea Implementation"
     },
     {
         date: "26th October 2023",
