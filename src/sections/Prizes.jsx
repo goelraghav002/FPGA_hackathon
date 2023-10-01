@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import "./Prizes.css"
 
 // this Prizeinfo array will be removed when model/data files will be created, for now this data has been copied from the old repo for visualization
@@ -47,7 +47,7 @@ const PrizeGroup = (props, index) => {
   return (
     <div key={index} className='grid-container'>
       {props.map((s, i) => (
-        <EachPrize icon={s.icon} type={s.type} content={s.content} />
+        <EachPrize key={i} icon={s.icon} type={s.type} content={s.content} />
       ))}
     </div>
   );
