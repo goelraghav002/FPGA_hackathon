@@ -16,7 +16,7 @@ const Banner = () => {
           <span className='typewriter'>
             <Typewriter
               options={{
-                strings: ['1st To be decided', 'Code In the Abyssal'],
+              strings: ['Unleash the FPGA Power: Code, Create, Compete!', 'Ignite Your Innovation with Hardware Hacks!'],
                 autoStart: true,
                 loop: true,
               }}
@@ -25,7 +25,7 @@ const Banner = () => {
           </span>
 
           <div className="banner-link">
-            <p>on 2nd and 3rd october</p>
+            {/* <p>on 2nd and 3rd october</p> */}
             <Link to="" className='join_disco'><BsDiscord /> &nbsp; &nbsp; Join our discord</Link>
 
             <Link to="" className='devfolio'>Go to Projects</Link>
