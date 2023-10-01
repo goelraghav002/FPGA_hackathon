@@ -1,6 +1,6 @@
 import React from 'react'
 import { organizers } from '../constants'
-import "./Sponsers.css"
+import "./Organizers.css"
 
 const EachOrganizer = (props) => {
   return (
@@ -13,7 +13,7 @@ const EachOrganizer = (props) => {
   )
 }
 
-const Sponsers = () => {
+const Organizers = () => {
   return (
     <div className="organizersSection" id="organizers">
       <h1 className="organizer-heading">Organizers</h1>
@@ -26,4 +26,4 @@ const Sponsers = () => {
   )
 }
 
-export default Sponsers
+export default Organizers
