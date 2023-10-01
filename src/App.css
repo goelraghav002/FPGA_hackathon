@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 } */
+
+body{
+  background-image: url("./assets/pattern4.png");
+  background-repeat: repeat;
+  background-size: 100%;
+
+}
