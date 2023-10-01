@@ -1,5 +1,5 @@
-import { useEffect,useState} from 'react';
-import { Link} from 'react-router-dom';
+import { useEffect,useRef,useState} from 'react';
+// import { Link} from 'react-router-dom';
 import styled from 'styled-components';
 import logoClose from "../assets/ham-c.svg";
 import hamLogo from '../assets/ham.svg';
@@ -19,9 +19,8 @@ const Wrapper = styled.div`
     height: 100vh;
     width: 100vw;
     position: fixed;
-    // translateY: -1000px;
     top: ${props => (props.toggle ? '-1000px' : '0px')};
-    animation: slideIn 0.7s ease-in-out;
+    animation: slideIn 0.2s ease-in-out;
     .nav-content {
       max-height: 35%;
       width: 100%;
@@ -43,13 +42,13 @@ const Wrapper = styled.div`
 
 
 
-const Navbar = ({}) => {
+const Navbar = () => {
   const [toggle, setToggle] = useState(true);
   const [isOffset, setIsOffset] = useState(false);
 
-  
+  const navigation = useRef();
 
-  const listenScrollEvent = e => {
+  const listenScrollEvent = () => {
     if (window.scrollY >= NAVIGATION_OFFSET) {
       setIsOffset(true);
     } else {
@@ -63,7 +62,7 @@ const Navbar = ({}) => {
   }, []);
 
   const handleOutsideCick = (event, ref) => {
-    if (!ref.current.contains(event.target)) {
+    if (!ref.current?.contains(event.target)) {
       setToggle(true);
     } else {
       setToggle(false);
