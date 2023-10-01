@@ -4,6 +4,8 @@ import Typewriter from 'typewriter-effect';
 import {BsDiscord} from 'react-icons/bs'
 import {AiOutlineInstagram, AiOutlineTwitter} from 'react-icons/ai'
 import {BiLogoLinkedin} from 'react-icons/bi'
+import {Link} from 'react-router-dom'
+
 
 const Banner = () => {
   return (
@@ -24,9 +26,9 @@ const Banner = () => {
 
           <div className="banner-link">
             <p>on 2nd and 3rd october</p>
-            <a href="" className='join_disco'><BsDiscord /> &nbsp; &nbsp; Join our discord</a>
+            <Link to="" className='join_disco'><BsDiscord /> &nbsp; &nbsp; Join our discord</Link>
 
-            <a href="" className='devfolio'>Go to Projects</a>
+            <Link to="" className='devfolio'>Go to Projects</Link>
  
             
           </div>
@@ -34,10 +36,10 @@ const Banner = () => {
           <div className="bottom">
             <p>Follow us on social media for updates</p>
             <ul>
-              <li><a href=""><AiOutlineInstagram /></a></li>
-              <li><a href=""><BsDiscord /></a></li>
-              <li><a href=""><BiLogoLinkedin /></a></li>
-              <li><a href=""><AiOutlineTwitter /></a></li>
+              <li><Link to=""><AiOutlineInstagram /></Link></li>
+              <li><Link to=""><BsDiscord /></Link></li>
+              <li><Link to=""><BiLogoLinkedin /></Link></li>
+              <li><Link to=""><AiOutlineTwitter /></Link></li>
             </ul>
           </div>
 
