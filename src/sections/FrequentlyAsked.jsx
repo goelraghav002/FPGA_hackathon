@@ -9,7 +9,7 @@ const FAQCard = ({ faq }) => {
   };
 
   return (
-    <div className="container-faq" id="faq">
+    <div className="container-faq">
       <h2 className="faq-heading">Frequently Asked Questions</h2>
       <div className="accordion">
         {faqs.map((faq, index) => (

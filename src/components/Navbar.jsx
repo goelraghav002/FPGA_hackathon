@@ -94,29 +94,24 @@ const Navbar = () => {
               </span>
             </li>
             <li>
-              <a href="#home">
+              <Link to="#home">
                 <span className="links">Home </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about">
+              <Link to="#faq">
                 <span className="links">About </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#prizes">
+              <Link to="#prizes">
                 <span className="links">Prizes </span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#sponsors">
+              <Link to="#sponsors">
                 <span className="links">Sponsors </span>
-              </a>
-            </li>
-            <li>
-              <a href="#faq">
-                <span className="links">FAQ </span>
-              </a>
+              </Link>
             </li>
 
             <img

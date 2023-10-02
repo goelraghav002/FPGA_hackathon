@@ -29,7 +29,7 @@ function Logo() {
 
 const About = () => {
   return (
-    <div className="about-container" id="about">
+    <div className="about-container">
       <LogoSectionAbout />
       <Logo />
     </div>
