@@ -40,7 +40,7 @@ const FrequentlyAsked = () => {
   };
 
   return (
-    <div className="container-faq">
+    <div className="container-faq" id="faq">
       <h2 className="faq-heading">Frequently Asked Questions</h2>
       <div className="accordion">
         {faqs.map((faq, index) => (
