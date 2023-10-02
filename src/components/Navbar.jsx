@@ -109,8 +109,8 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a href="#sponsors">
-                <span className="links">Sponsors </span>
+              <a href="#organizers">
+                <span className="links">Organizers </span>
               </a>
             </li>
             <li>
