@@ -34,7 +34,7 @@ const Navbar = () => {
           <div className='nav-content'>
             <ul>
               <li><span className="links"><img src={logo} alt="" width="80px" /></span></li>
-              {["Home", "About", "Prizes", "Organizers", "FAQ"].map((item) => (
+              {["Home", "About", "Prizes", "Organizers", "Speakers", "FAQ"].map((item) => (
                 <li  key={`link-${item}`}>
                     <a href={`#${item.toLowerCase()}`}>  <span className='links'> {item} </span> </a>                 
                 </li>
@@ -53,7 +53,7 @@ const Navbar = () => {
               >
               <ul>
                 <HiX onClick={() => setNavtoggle(false)} />
-                {["Home", "About", "Prizes", "Organizers", "FAQ"].map((item) => (
+                {["Home", "About", "Prizes", "Organizers", "Speakers", "FAQ"].map((item) => (
                   <li className='p-text' key={`${item}`}>
                       <a href={ `#${item.toLowerCase()}`} onClick={() => setNavtoggle(false)}> {item} </a>
                   </li>
