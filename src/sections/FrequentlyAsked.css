@@ -55,7 +55,7 @@
   color: #fff;
 }
 
-.faq.active .faq__answer {
+.faq .active .faq__answer {
   display: block;
 }
 

@@ -10,6 +10,21 @@ const FAQCard = ({ faq }) => {
 
   return (
     <div className="faq">
+
+      <div className="" onClick={toggleAccordion}>
+        <div className="faq__question">{faq.question}
+        <div className="active">
+          {activeIndex ? "-" : "+"}
+        </div>
+        </div>
+      </div>
+      <div className={activeIndex ? "faq__answer active" : "faq__answer"}>
+        {faq.answer}
+      </div>
+    </div>
+
+  
+
       <div className="faq__question">
         {faq.question}
         <button onClick={toggleAccordion} className="faq__button font-bold"><span className="text-3xl">{!activeIndex ? "+" : "-"}</span></button>
@@ -32,6 +47,6 @@ const FrequentlyAsked = () => {
       </div>
     </div>
   );
-};
+}
 
 export default FrequentlyAsked;

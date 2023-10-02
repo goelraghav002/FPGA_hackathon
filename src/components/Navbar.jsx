@@ -113,6 +113,7 @@ const Navbar = () => {
                 <span className="links">Organizers </span>
               </a>
             </li>
+
             <li>
               <a href="#faq">
                 <span className="links">FAQ </span>
