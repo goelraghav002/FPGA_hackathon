@@ -12,7 +12,7 @@ const Banner = () => {
   
     <div className="landing" id="home">      
         <div className='content'>
-          <h1>FPGA Hackathon</h1>
+          <h1>FGPA-thon</h1>
           <span className='typewriter'>
             <Typewriter
               options={{
