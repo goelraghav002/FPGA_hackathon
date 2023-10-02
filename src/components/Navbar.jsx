@@ -109,6 +109,11 @@ const Navbar = () => {
               </a>
             </li>
             <li>
+              <a href="#speakers">
+                <span className="links">Speakers </span>
+              </a>
+            </li>
+            <li>
               <a href="#organizers">
                 <span className="links">Organizers </span>
               </a>
