@@ -10,7 +10,7 @@ import {Link} from 'react-router-dom'
 const Banner = () => {
   return (
   
-    <div className="landing">      
+    <div className="landing" id="home">      
         <div className='content'>
           <h1>FPGA Hackathon</h1>
           <span className='typewriter'>
@@ -46,7 +46,7 @@ const Banner = () => {
         </div>
 
 
-      </div>          
+    </div>          
     
   )
 }

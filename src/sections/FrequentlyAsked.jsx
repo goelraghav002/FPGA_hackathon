@@ -9,7 +9,26 @@ const FAQCard = ({ faq }) => {
   };
 
   return (
-    <div className="container-faq">
+    <div className="faq">
+      <div className="" onClick={toggleAccordion}>
+        <div className="faq__question">{faq.question}
+        <div className="active">
+          {activeIndex ? "-" : "+"}
+        </div>
+        </div>
+      </div>
+      <div className={activeIndex ? "faq__answer active" : "faq__answer"}>
+        {faq.answer}
+      </div>
+    </div>
+
+  
+  );
+};
+
+const FrequentlyAsked = () => {
+  return (
+    <div className="container-faq" id="faq">
       <h2 className="faq-heading">Frequently Asked Questions</h2>
       <div className="accordion">
         {faqs.map((faq, index) => (
@@ -18,6 +37,6 @@ const FAQCard = ({ faq }) => {
       </div>
     </div>
   );
-};
+}
 
 export default FrequentlyAsked;
