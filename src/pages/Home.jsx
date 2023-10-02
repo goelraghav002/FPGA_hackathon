@@ -7,6 +7,7 @@ import FrequentlyAsked from '../sections/FrequentlyAsked'
 import Organizers from '../sections/Organizers'
 import Footer from '../components/Footer'
 import Prizes from '../sections/Prizes'
+import Speakers from '../sections/Speakers'
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <About />
             <Timeline />
             <Prizes />
+            <Speakers />
             <Organizers />
             <FrequentlyAsked />
             <Footer />
