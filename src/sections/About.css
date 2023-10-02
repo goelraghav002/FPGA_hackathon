@@ -4,13 +4,13 @@
 }
 
 .logoS {
-    width: 40%;
+    width: 30%;
     height: 400px;
     margin-top: 0;
     padding: 0;
     position: relative;
-    top:2.5rem;
-    left:2rem;
+    top:5.5rem;
+    /* left:2rem; */
   }
   .Logo {
     width: 60%;
