@@ -15,7 +15,7 @@ const EachOrganizer = (props) => {
 
 const Organizers = () => {
   return (
-    <div className="organizersSection" id="organizers">
+    <div className="organizersSection" id="sponsors">
       <h1 className="organizer-heading">Organizers</h1>
       <div className='organizers-grid-container'>
         {organizers.map((s, i) => (
