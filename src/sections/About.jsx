@@ -5,7 +5,7 @@ import './About.css';
 const ABOUT_SECTION = {
   TITLE: 'What is FPGA?',
   LONG_DESCRIPTION:
-    "We believe that AMD, as a leader in innovative computing solutions, is the ideal partner for this event. Their expertise in hardware and FPGA technology aligns perfectly with the goals of our Hackathon. We are confident that their involvement will add immense value to the event and inspire students to explore new horizons in FPGA technology.",
+    "FPGA is Field Programmable Gate Array. It is a development board, generally used for VLSI verification of IC. These development boards are now also used in embedded systems due to their low power consumption, high speed data processing and various other key features.",
   LOGO: hackathonLogo,
 };
 
