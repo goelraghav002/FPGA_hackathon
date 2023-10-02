@@ -1,53 +1,63 @@
-/* .Row {
-    text-align: center;
-} */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
-*{
+* {
     font-family: 'Montserrat', sans-serif;
 }
 
-.prizes-grid-container{
+.prizes-grid-container {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
 }
 
 .prizesection {
     text-align: center;
-    width:95%;
-    padding: 4vh 6vh;
+    width: 85%;
+    padding: 4vh 0vh;
     margin: 4vh auto;
     border-radius: 14px;
     background-color: #f3effe;
 }
 
-.prizesection h1{
+.prizesection h1 {
     font-weight: bolder;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    padding-bottom: 4vh;
 }
 
-.EachPrizes{
+.EachPrizes {
     margin: 1vh 4vh;
     text-align: left;
 }
 
-.EachPrizes p{
+.EachPrizes p {
     font-size: 1.2rem;
     color: rgb(145, 143, 143);
 }
 
-.EachPrizes h2{
+.EachPrizes h2 {
     font-size: 1.7rem;
 }
 
+.EachPrizes .first {
+    color: #A239EA;
+}
+
+.EachPrizes .second {
+    color: #39A2DB;
+}
+
+
 
 @media (max-width: 970px) {
-    .prizes-grid-container{
+    .prizes-grid-container {
         grid-template-columns: 1fr;
     }
-    .EachPrizes{
-        margin:4vh 1vh;
+
+    .EachPrizes {
+        margin: 3vh 4vh;
+        text-align: left;
     }
 }
