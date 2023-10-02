@@ -1,50 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
-// import { Link} from 'react-router-dom';
-import styled from 'styled-components';
-import logoClose from "../assets/ham-c.svg";
-import hamLogo from '../assets/ham.svg';
 import logo from '../assets/logo.png';
+import {HiX} from "react-icons/hi"
+import {AiOutlineMenu} from "react-icons/ai"
 import './Navbar.scss';
-import { Link } from 'react-router-dom';
+import {motion } from "framer-motion"
 
 const NAVIGATION_OFFSET = 66;
 
-
-const Wrapper = styled.div`
-  display: block;
-  width: 100%;
-
-  @media (max-width: 1000px) {
-    margin: 0;
-    display: ${props => (props.toggle ? 'none' : 'static')};
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: ${props => (props.toggle ? '-1000px' : '0px')};
-    animation: slideIn 0.2s ease-in-out;
-    .nav-content {
-      max-height: 35%;
-      width: 100%;
-      background-color: rgba(50, 13, 136);
-      padding: 1rem;
-    }
-  }
-
-  @keyframes slideIn {
-    from {
-      transform: translateY(-100%);
-    }
-    to {
-      transform: translateY(0);
-    }
-  }
-`;
-
-
-
-
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [navtoggle, setNavtoggle] = useState(false);
   const [isOffset, setIsOffset] = useState(false);
 
   const navigation = useRef();
@@ -62,88 +26,46 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', listenScrollEvent);
   }, []);
 
-  const handleOutsideCick = (event, ref) => {
-    if (!ref.current?.contains(event.target)) {
-      setToggle(true);
-    } else {
-      setToggle(false);
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener('mousedown', e =>
-      handleOutsideCick(e, navigation)
-    );
-
-    return () => {
-      document.removeEventListener('mousedown', e =>
-        handleOutsideCick(e, navigation)
-      );
-    };
-  }, []);
 
   return (
-
-    <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
-      <Wrapper toggle={toggle}>
-        <div className="nav-content" >
-          <ul>
-            <li>
-              <span className="links">
-                <img src={logo} width="80px" alt="logo" />
-              </span>
-            </li>
-            <li>
-              <a href="#home">
-                <span className="links">Home </span>
-              </a>
-            </li>
-            <li>
-              <a href="#about">
-                <span className="links">About </span>
-              </a>
-            </li>
-            <li>
-              <a href="#prizes">
-                <span className="links">Prizes </span>
-              </a>
-            </li>
-            <li>
-              <a href="#speakers">
-                <span className="links">Speakers </span>
-              </a>
-            </li>
-            <li>
-              <a href="#organizers">
-                <span className="links">Organizers </span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#faq">
-                <span className="links">FAQ </span>
-              </a>
-            </li>
-
-            <img
-              className="s-close"
-              onClick={() => setToggle(true)}
-              src={logoClose}
-            />
-          </ul>
-        </div>
-
-      </Wrapper>
-
-      <img
-        className="s-open"
-        onClick={() => setToggle(false)}
-        src={hamLogo}
-      />
-    </nav>
+    <>
+      
+      <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
+          <div className='nav-content'>
+            <ul>
+              <li><span className="links"><img src={logo} alt="" width="80px" /></span></li>
+              {["Home", "About", "Prizes", "Organizers", "FAQ"].map((item) => (
+                <li  key={`link-${item}`}>
+                    <a href={`#${item.toLowerCase()}`}>  <span className='links'> {item} </span> </a>                 
+                </li>
+              ))}
+            </ul>
+          </div>
 
 
-  );
-};
+          <div className='app__navbar-menu'>
+            <AiOutlineMenu onClick={() => setNavtoggle(true)} />
+            {navtoggle && (
+              <motion.div 
+                whileInView={{ x : [200,0]}} 
+                transition={{duration: 0.65, ease: "easeOut"}}
 
-export default Navbar;
+              >
+              <ul>
+                <HiX onClick={() => setNavtoggle(false)} />
+                {["Home", "About", "Prizes", "Organizers", "FAQ"].map((item) => (
+                  <li className='p-text' key={`${item}`}>
+                      <a href={ `#${item.toLowerCase()}`} onClick={() => setNavtoggle(false)}> {item} </a>
+                  </li>
+                ))}
+              </ul>
+              </motion.div>
+            )}
+          </div>
+      </nav>
+    </>
+
+  )
+}
+
+export default Navbar

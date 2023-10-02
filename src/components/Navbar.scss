@@ -1,101 +1,165 @@
 .nav_bar {
-    list-style-type: none;
-    height: 50px;
-    font-size: 2rem;
-    position: fixed;
-    top:0;
-    width: 100%;
-    z-index: 10;
-    transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+  list-style-type: none;
+  height: 50px;
+  font-size: 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    background-color: #121930;
+  background-color: #121930;
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 1000px) {
+    height: 88px;
+  }
+}
+
+// @media screen and (min-width: 1000px) {
+  .nav_bar-offset-crossed {
+    background-color: #6a63b7;
+    height: 72px;
+    box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
+  }
+// }
+
+@media screen and (max-width: 900px) {
+  .nav_bar-offset-crossed {
+    height: 50px;
+  }
+}
+
+.s-open,
+.s-close {
+  display: none;
+}
+
+.nav-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  margin: 0 auto;
+  width: 90%;
+
+
+}
+
+a {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  width: 100%;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  height: 100%;
+  align-items: center;
+  @media screen and (max-width: 900px) {
+    display: none;   
+  }
+}
+
+nav ul li {
+  display: inline-block;
+}
+.links {
+  color: rgb(231, 228, 228);
+  transition: 0.5s;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  font-size: 1.3rem;
+  // width: fit-content;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.app__navbar-menu {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    width: 70%;
+    height: 70%;
+    color: white;
+  }
+
+  div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    padding: 1rem;
+    color: white;
+    width: 80%;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    
-    @media (min-width: 1000px) {
-      height: 88px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: rgba(50, 13, 136);
+    box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+
+    ul {
+      position: relative;
+      svg {
+        position: absolute;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        color: white;
+        margin: 0.5rem 1rem;
+      }
+
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      justify-content: flex-start;
+      gap: 0;
+      align-items: flex-start;
+      flex-direction: column;
+
+      li {
+        margin: 1rem;
+
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 500;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: #6a63b7;
+            
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 900px) {
+      display: none;
     }
   }
-  
-  @media (min-width: 1000px) {
-    .nav_bar-offset-crossed {
-      background-color: #6A63B7;
-      height: 72px;
-      box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
-    }
-  }
-  
-  .s-open,
-  .s-close {
+
+  @media screen and (min-width: 900px) {
     display: none;
   }
-
-
-  .nav-content {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: fit-content;
-    height: 100%;
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  a{
-
-    display: flex;
-    align-items: center;
-  }
-
-  ul {
-    width: 100%;
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 2.5rem;
-    height: 100%;
-    align-items: center;
-  }
-  
-    nav ul li {
-      display: inline-block;
-    }
-    .links {
-      color: rgb(231, 228, 228);
-      transition: 0.5s;
-      font-weight: 400;
-      letter-spacing: 1.3px;
-      font-size: 1.3rem;
-      // width: fit-content;
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  
-    @media (max-width: 1000px) {
-
-      ul {
-        flex-direction: column;
-        margin: 0 auto;
-        width: 100%;
-        padding: 30px 20;
-        justify-content: space-between;
-        gap: 0;
-      }
-      .s-open {
-        display: inline;
-        position: absolute;
-        right: 10px;
-        top: 15px;
-        z-index: -1;
-      }
-      .s-close {
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 15px;
-        
-      }
-    }
-    
+}
