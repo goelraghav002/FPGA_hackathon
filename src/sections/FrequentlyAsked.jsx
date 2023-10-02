@@ -10,6 +10,7 @@ const FAQCard = ({ faq }) => {
 
   return (
     <div className="faq">
+
       <div className="" onClick={toggleAccordion}>
         <div className="faq__question">{faq.question}
         <div className="active">
@@ -23,6 +24,15 @@ const FAQCard = ({ faq }) => {
     </div>
 
   
+
+      <div className="faq__question">
+        {faq.question}
+        <button onClick={toggleAccordion} className="faq__button font-bold"><span className="text-3xl">{!activeIndex ? "+" : "-"}</span></button>
+      </div>
+      {activeIndex && (
+        <div className={`faq__answer ${activeIndex ? 'block' : 'hidden'}`}>{faq.answer}</div>
+      )}
+    </div>
   );
 };
 

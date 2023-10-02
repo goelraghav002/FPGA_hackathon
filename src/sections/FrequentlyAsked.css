@@ -48,8 +48,7 @@
 
 .faq__answer {
     padding: 20px 20px;
-    background-color: #f7f7f7;
-    display: none;
+    background-color: #f3effe;
   }
 
 .faq.active .faq__question {
