@@ -1,3 +1,8 @@
+.about-container{
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .logoS {
     width: 40%;
     height: 400px;
