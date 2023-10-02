@@ -73,13 +73,15 @@
 
   .faq__question {
     font-size: 1rem; 
-    height: 2.5rem; 
+    height: 5rem; 
   }
 
   .faq__answer {
     padding: 1rem; 
     text-align:justify;
   }
+
+  
 
   .faq-heading{
     text-align:center;
