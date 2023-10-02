@@ -49,6 +49,7 @@
 .faq__answer {
     padding: 20px 20px;
     background-color: #f3effe;
+    text-align:justify;
   }
 
 .faq.active .faq__question {
@@ -61,4 +62,27 @@
 
 .faq__button {
   position: relative;
+}
+
+
+
+@media (max-width: 768px) {
+  .accordion {
+    padding: 1rem;
+  }
+
+  .faq__question {
+    font-size: 1rem; 
+    height: 2.5rem; 
+  }
+
+  .faq__answer {
+    padding: 1rem; 
+    text-align:justify;
+  }
+
+  .faq-heading{
+    width:100vw;
+    text-align:center;
+  }
 }
