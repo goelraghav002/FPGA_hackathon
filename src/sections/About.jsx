@@ -5,7 +5,7 @@ import './About.css';
 const ABOUT_SECTION = {
   TITLE: 'What is FPGA?',
   LONG_DESCRIPTION:
-    'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium repellat quo ullam officiis sequi aliquam, iusto, perspiciatis animi ab fuga maiores, alias aliquid numquam! Sint voluptatibus sunt beatae quidem similique, suscipit hic iste asperiores totam qui rem quia cumque architecto, tempore nobis commodi provident labore blanditiis a reiciendis. Optio, quas.Lorem ipsum dolor sit amet consectetur adipisicing elit',
+    "We believe that AMD, as a leader in innovative computing solutions, is the ideal partner for this event. Their expertise in hardware and FPGA technology aligns perfectly with the goals of our Hackathon. We are confident that their involvement will add immense value to the event and inspire students to explore new horizons in FPGA technology.",
   LOGO: hackathonLogo,
 };
 
