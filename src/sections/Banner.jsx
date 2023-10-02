@@ -23,7 +23,7 @@ const Banner = () => {
               
             />
           </span>
-
+        <div>&nbsp;</div>
           <div className="banner-link">
             {/* <p>on 2nd and 3rd october</p> */}
             <Link to="" className='join_disco'><BsDiscord /> &nbsp; &nbsp; Join our discord</Link>
