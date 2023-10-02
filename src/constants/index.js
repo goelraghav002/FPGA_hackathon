@@ -1,7 +1,20 @@
 import { ieee, jiit, amd, aujus } from "../assets/organizers";
 import { rohith, vaibbhav } from "../assets/speakers";
 
-export const prizes = [{}, {}, {}, {}, {}];
+export const prizes = [
+  {
+    icon: '<i class="first fa-solid fa-trophy fa-4x"></i>',
+    type: 'Winner',
+    content:
+      'Winner prize will be given to a project that outstands all other submissions'
+  },
+  {
+    icon: '<i class="second fa-solid fa-medal fa-4x"></i>',
+    type: '1st Runner-up',
+    content:
+      '1st Runner-up prize will be given to the second best project of the hackathon'
+  },
+];
 
 export const organizers = [
   {
