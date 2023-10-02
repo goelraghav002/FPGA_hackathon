@@ -1,4 +1,5 @@
 import { ieee, jiit, amd, aujus } from "../assets/organizers";
+import { rohith, vaibbhav } from "../assets/speakers";
 
 export const prizes = [{}, {}, {}, {}, {}];
 
@@ -18,6 +19,19 @@ export const organizers = [
   {
     name: "Aujus Technology",
     img: aujus,
+  },
+];
+
+export const speakers = [
+  {
+    name: "Rohith Gopala Krishna",
+    designation: "Country Head - AMD",
+    img: rohith,
+  },
+  {
+    name: "Vaibbhav Mishrra",
+    designation: "Director & Co-Founder - AUJUS Technologies",
+    img: vaibbhav,
   },
 ];
 
