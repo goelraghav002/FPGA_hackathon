@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react'
 import './Banner.scss'
 import Typewriter from 'typewriter-effect';
-import {BsDiscord} from 'react-icons/bs'
-import {AiOutlineInstagram, AiOutlineTwitter} from 'react-icons/ai'
+import {AiFillFacebook, AiOutlineInstagram, AiOutlineTwitter} from 'react-icons/ai'
 import {BiLogoLinkedin} from 'react-icons/bi'
 import {Link} from 'react-router-dom'
 import { problem } from '../assets';
@@ -13,7 +11,7 @@ const Banner = () => {
   
     <div className="landing" id="home">      
         <div className='content'>
-          <h1>FPGA-thon</h1>
+          <h1>FPGA-THON</h1>
           <span className='typewriter'>
             <Typewriter
               options={{
@@ -27,7 +25,7 @@ const Banner = () => {
         <div>&nbsp;</div>
           <div className="banner-link">
             {/* <p>on 2nd and 3rd october</p> */}
-            <Link to="" className='join_disco'><BsDiscord /> &nbsp; &nbsp; Join our discord</Link>
+          <Link to="https://unstop.com/p/this-fpgathon-comes-with-multiple-challenges-as-well-as-opportunities-the-external-hackathon-powered-by-amd-brings-abo-788326" className='join_disco'>Register on Unstop</Link>
 
           <a href={problem} target='_blank' rel="noreferrer" className='devfolio'>Problem Statements</a>
  
@@ -38,7 +36,7 @@ const Banner = () => {
             <p>Follow us on social media for updates</p>
             <ul>
               <li><Link to=""><AiOutlineInstagram /></Link></li>
-              <li><Link to=""><BsDiscord /></Link></li>
+              <li><Link to=""><AiFillFacebook /></Link></li>
               <li><Link to=""><BiLogoLinkedin /></Link></li>
               <li><Link to=""><AiOutlineTwitter /></Link></li>
             </ul>
