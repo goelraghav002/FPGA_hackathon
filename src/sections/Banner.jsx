@@ -5,6 +5,7 @@ import {BsDiscord} from 'react-icons/bs'
 import {AiOutlineInstagram, AiOutlineTwitter} from 'react-icons/ai'
 import {BiLogoLinkedin} from 'react-icons/bi'
 import {Link} from 'react-router-dom'
+import { problem } from '../assets';
 
 
 const Banner = () => {
@@ -28,7 +29,7 @@ const Banner = () => {
             {/* <p>on 2nd and 3rd october</p> */}
             <Link to="" className='join_disco'><BsDiscord /> &nbsp; &nbsp; Join our discord</Link>
 
-            <Link to="" className='devfolio'>Go to Projects</Link>
+          <a href={problem} target='_blank' rel="noreferrer" className='devfolio'>Problem Statements</a>
  
             
           </div>
