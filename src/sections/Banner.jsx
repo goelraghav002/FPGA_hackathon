@@ -35,10 +35,10 @@ const Banner = () => {
           <div className="bottom">
             <p>Follow us on social media for updates</p>
             <ul>
-              <li><Link to=""><AiOutlineInstagram /></Link></li>
-              <li><Link to=""><AiFillFacebook /></Link></li>
-              <li><Link to=""><BiLogoLinkedin /></Link></li>
-              <li><Link to=""><AiOutlineTwitter /></Link></li>
+            <li><a href="https://www.instagram.com/ieeesbjiit/" target="_blank" rel="noreferrer"><AiOutlineInstagram /></a></li>
+            <li><a href="https://www.facebook.com/ieeesbjiit" target="_blank" rel="noreferrer"><AiFillFacebook /></a></li>
+            <li><a href="https://www.linkedin.com/company/ieee-student-branch-jiit" target="_blank" rel="noreferrer"><BiLogoLinkedin /></a></li>
+            {/* <li><a href="" target="_blank" rel="noreferrer"><AiOutlineTwitter /></a></li> */}
             </ul>
           </div>
 
