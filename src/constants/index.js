@@ -66,7 +66,7 @@ export const timeline = [
     event: "Idea Implementation",
   },
   {
-    date: "26th October 2023",
+    date: "28th October 2023",
     event: "Idea Presentation",
   },
 ];
