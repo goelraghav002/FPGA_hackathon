@@ -11,7 +11,7 @@ const Banner = () => {
   
     <div className="landing" id="home">      
         <div className='content'>
-          <h1>Hackstreet24</h1>
+          <h1>FPGA-Thon</h1>
           <span className='typewriter'>
             <Typewriter
               options={{
@@ -23,14 +23,14 @@ const Banner = () => {
             />
           </span>
         <div>&nbsp;</div>
-          {/* <div className="banner-link">
+          <div className="banner-link">
 
           <Link to="https://unstop.com/p/this-fpgathon-comes-with-multiple-challenges-as-well-as-opportunities-the-external-hackathon-powered-by-amd-brings-abo-788326" className='join_disco'>Register on Unstop</Link>
 
           <a href={problem} target='_blank' rel="noreferrer" className='devfolio'>Problem Statements</a>
  
             
-          </div> */}
+          </div>
 
           <div className="bottom">
             <p>Follow us on social media for updates</p>
