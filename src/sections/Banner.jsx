@@ -11,11 +11,11 @@ const Banner = () => {
   
     <div className="landing" id="home">      
         <div className='content'>
-          <h1>FPGA-THON</h1>
+          <h1>Hackstreet24</h1>
           <span className='typewriter'>
             <Typewriter
               options={{
-              strings: ['Unleash the FPGA Power: Code, Create, Compete!', 'Ignite Your Innovation with Hardware Hacks!'],
+              strings: ['Unleash the Hackstreet24 Power: Code, Create, Compete!', 'Ignite Your Innovation with Hardware Hacks!'],
                 autoStart: true,
                 loop: true,
               }}

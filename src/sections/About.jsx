@@ -3,9 +3,9 @@ import hackathonLogo from '../assets/hackathonLogo.png';
 import './About.css';
 
 const ABOUT_SECTION = {
-  TITLE: 'What is FPGA?',
+  TITLE: 'What is Hackstreet24?',
   LONG_DESCRIPTION:
-    "FPGA is Field Programmable Gate Array. It is a development board, generally used for VLSI verification of IC. These development boards are now also used in embedded systems due to their low power consumption, high speed data processing and various other key features.",
+    "Hackstreet24 is Field Programmable Gate Array. It is a development board, generally used for VLSI verification of IC. These development boards are now also used in embedded systems due to their low power consumption, high speed data processing and various other key features.",
   LOGO: hackathonLogo,
 };
 
