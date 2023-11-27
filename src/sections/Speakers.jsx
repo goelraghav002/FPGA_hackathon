@@ -21,9 +21,11 @@ const Speakers = () => {
         <div className="SpeakersSection" id="speakers">
             <h1 className="speaker-heading">Speakers</h1>
             <div className='speakers-grid-container'>
-                {speakers.map((s, i) => (
+                {/* {speakers.map((s, i) => (
                     <EachSpeaker key={i} img={s.img} name={s.name} designation={s.designation} />
-                ))}
+                ))} */}
+
+                <h1>Coming Soon...</h1>
             </div>
         </div>
     )

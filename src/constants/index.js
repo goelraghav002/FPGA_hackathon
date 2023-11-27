@@ -50,23 +50,23 @@ export const speakers = [
 
 export const timeline = [
   {
-    date: "3rd October 2023",
+    date: "Coming Soon...",
     event: "Orientiation",
   },
   {
-    date: "4th - 7th October 2023",
+    date: "Coming Soon...",
     event: "Offline Training",
   },
   {
-    date: "10th October 2023",
+    date: "Coming Soon...",
     event: "Team Registration",
   },
   {
-    date: "12th - 25th October 2023",
+    date: "Coming Soon...",
     event: "Idea Implementation",
   },
   {
-    date: "28th October 2023",
+    date: "Coming Soon...",
     event: "Idea Presentation",
   },
 ];
